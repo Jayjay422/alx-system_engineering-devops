@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -newer ../ -exec cp --update {} ../ \
+for file in *.html; do [ -f "../$file" ] && [ "$file" -nt "../$file" ] && cp "$file" "../"; done
