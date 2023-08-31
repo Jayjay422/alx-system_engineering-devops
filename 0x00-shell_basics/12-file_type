@@ -1,2 +1,2 @@
 #!/bin/bash
-type=$(file -b /tmp/iamafile); echo "$type"
+file /tmp/iamafile
